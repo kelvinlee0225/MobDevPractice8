@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MobDevPractice8.Views;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,7 +11,7 @@ namespace MobDevPractice8
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new MainTabbedPage();
         }
 
         protected override void OnStart()
