@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobDevPractice8.Views.MainTabbedPage"
+            xmlns:local="clr-namespace:MobDevPractice8.Views">
+  <!--Pages can be added as references or inline-->
+    <NavigationPage Title="Dependecy Service">
+        <x:Arguments>
+            <local:DependecyServicePage />
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Customize Entry">
+        <x:Arguments>
+            <local:MyEntryPage />
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Create Effect">
+        <x:Arguments>
+            <local:FocusEffectPage />
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Platform Specific"
+                    xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.AppCompat;assembly=Xamarin.Forms.Core"
+                    android:NavigationPage.BarHeight="400">
+        <x:Arguments>
+            <local:PlatformSpecificSpage />
+        </x:Arguments>
+    </NavigationPage>
+</TabbedPage>

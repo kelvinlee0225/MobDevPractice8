@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobDevPractice8.Views.PlatformSpecificSpage"
+             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+             Title="Platform Specific">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button Text="Button with padding and shadow"
+                android:Button.UseDefaultPadding="true"
+                android:Button.UseDefaultShadow="true" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

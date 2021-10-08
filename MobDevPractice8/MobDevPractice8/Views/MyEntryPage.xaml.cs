@@ -1,16 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Xamarin.Forms;
 
-namespace MobDevPractice8
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+
+namespace MobDevPractice8.Views
 {
-    public partial class MainPage : ContentPage
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class MyEntryPage : ContentPage
     {
-        public MainPage()
+        public MyEntryPage()
         {
             InitializeComponent();
         }
